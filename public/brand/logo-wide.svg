@@ -1,0 +1,21 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <!-- Wide NineU Labs logo -->
+  <!-- NU Monogram on left -->
+  <g id="nu-monogram-wide">
+    <defs>
+      <linearGradient id="grad-wide" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#35e2ff;stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#1f5fff;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#0a2d53;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <path fill="url(#grad-wide)" d="M 80 80 Q 120 100 120 160 Q 120 220 80 240 L 80 80 Z"/>
+    <path fill="url(#grad-wide)" d="M 140 100 Q 180 140 180 160 Q 180 180 140 220 L 140 100 Z"/>
+    <path fill="url(#grad-wide)" d="M 200 120 Q 240 150 240 160 Q 240 170 200 200 L 200 120 Z"/>
+    <path fill="url(#grad-wide)" d="M 260 90 Q 320 140 320 200 Q 320 260 260 310 L 260 90 Z"/>
+  </g>
+
+  <!-- NineU Labs text -->
+  <text x="380" y="240" font-size="120" font-weight="800" letter-spacing="-3" fill="white" font-family="Arial, sans-serif">NineU</text>
+  <text x="920" y="240" font-size="120" font-weight="800" letter-spacing="-2" fill="#35e2ff" font-family="Arial, sans-serif">Labs</text>
+</svg>
