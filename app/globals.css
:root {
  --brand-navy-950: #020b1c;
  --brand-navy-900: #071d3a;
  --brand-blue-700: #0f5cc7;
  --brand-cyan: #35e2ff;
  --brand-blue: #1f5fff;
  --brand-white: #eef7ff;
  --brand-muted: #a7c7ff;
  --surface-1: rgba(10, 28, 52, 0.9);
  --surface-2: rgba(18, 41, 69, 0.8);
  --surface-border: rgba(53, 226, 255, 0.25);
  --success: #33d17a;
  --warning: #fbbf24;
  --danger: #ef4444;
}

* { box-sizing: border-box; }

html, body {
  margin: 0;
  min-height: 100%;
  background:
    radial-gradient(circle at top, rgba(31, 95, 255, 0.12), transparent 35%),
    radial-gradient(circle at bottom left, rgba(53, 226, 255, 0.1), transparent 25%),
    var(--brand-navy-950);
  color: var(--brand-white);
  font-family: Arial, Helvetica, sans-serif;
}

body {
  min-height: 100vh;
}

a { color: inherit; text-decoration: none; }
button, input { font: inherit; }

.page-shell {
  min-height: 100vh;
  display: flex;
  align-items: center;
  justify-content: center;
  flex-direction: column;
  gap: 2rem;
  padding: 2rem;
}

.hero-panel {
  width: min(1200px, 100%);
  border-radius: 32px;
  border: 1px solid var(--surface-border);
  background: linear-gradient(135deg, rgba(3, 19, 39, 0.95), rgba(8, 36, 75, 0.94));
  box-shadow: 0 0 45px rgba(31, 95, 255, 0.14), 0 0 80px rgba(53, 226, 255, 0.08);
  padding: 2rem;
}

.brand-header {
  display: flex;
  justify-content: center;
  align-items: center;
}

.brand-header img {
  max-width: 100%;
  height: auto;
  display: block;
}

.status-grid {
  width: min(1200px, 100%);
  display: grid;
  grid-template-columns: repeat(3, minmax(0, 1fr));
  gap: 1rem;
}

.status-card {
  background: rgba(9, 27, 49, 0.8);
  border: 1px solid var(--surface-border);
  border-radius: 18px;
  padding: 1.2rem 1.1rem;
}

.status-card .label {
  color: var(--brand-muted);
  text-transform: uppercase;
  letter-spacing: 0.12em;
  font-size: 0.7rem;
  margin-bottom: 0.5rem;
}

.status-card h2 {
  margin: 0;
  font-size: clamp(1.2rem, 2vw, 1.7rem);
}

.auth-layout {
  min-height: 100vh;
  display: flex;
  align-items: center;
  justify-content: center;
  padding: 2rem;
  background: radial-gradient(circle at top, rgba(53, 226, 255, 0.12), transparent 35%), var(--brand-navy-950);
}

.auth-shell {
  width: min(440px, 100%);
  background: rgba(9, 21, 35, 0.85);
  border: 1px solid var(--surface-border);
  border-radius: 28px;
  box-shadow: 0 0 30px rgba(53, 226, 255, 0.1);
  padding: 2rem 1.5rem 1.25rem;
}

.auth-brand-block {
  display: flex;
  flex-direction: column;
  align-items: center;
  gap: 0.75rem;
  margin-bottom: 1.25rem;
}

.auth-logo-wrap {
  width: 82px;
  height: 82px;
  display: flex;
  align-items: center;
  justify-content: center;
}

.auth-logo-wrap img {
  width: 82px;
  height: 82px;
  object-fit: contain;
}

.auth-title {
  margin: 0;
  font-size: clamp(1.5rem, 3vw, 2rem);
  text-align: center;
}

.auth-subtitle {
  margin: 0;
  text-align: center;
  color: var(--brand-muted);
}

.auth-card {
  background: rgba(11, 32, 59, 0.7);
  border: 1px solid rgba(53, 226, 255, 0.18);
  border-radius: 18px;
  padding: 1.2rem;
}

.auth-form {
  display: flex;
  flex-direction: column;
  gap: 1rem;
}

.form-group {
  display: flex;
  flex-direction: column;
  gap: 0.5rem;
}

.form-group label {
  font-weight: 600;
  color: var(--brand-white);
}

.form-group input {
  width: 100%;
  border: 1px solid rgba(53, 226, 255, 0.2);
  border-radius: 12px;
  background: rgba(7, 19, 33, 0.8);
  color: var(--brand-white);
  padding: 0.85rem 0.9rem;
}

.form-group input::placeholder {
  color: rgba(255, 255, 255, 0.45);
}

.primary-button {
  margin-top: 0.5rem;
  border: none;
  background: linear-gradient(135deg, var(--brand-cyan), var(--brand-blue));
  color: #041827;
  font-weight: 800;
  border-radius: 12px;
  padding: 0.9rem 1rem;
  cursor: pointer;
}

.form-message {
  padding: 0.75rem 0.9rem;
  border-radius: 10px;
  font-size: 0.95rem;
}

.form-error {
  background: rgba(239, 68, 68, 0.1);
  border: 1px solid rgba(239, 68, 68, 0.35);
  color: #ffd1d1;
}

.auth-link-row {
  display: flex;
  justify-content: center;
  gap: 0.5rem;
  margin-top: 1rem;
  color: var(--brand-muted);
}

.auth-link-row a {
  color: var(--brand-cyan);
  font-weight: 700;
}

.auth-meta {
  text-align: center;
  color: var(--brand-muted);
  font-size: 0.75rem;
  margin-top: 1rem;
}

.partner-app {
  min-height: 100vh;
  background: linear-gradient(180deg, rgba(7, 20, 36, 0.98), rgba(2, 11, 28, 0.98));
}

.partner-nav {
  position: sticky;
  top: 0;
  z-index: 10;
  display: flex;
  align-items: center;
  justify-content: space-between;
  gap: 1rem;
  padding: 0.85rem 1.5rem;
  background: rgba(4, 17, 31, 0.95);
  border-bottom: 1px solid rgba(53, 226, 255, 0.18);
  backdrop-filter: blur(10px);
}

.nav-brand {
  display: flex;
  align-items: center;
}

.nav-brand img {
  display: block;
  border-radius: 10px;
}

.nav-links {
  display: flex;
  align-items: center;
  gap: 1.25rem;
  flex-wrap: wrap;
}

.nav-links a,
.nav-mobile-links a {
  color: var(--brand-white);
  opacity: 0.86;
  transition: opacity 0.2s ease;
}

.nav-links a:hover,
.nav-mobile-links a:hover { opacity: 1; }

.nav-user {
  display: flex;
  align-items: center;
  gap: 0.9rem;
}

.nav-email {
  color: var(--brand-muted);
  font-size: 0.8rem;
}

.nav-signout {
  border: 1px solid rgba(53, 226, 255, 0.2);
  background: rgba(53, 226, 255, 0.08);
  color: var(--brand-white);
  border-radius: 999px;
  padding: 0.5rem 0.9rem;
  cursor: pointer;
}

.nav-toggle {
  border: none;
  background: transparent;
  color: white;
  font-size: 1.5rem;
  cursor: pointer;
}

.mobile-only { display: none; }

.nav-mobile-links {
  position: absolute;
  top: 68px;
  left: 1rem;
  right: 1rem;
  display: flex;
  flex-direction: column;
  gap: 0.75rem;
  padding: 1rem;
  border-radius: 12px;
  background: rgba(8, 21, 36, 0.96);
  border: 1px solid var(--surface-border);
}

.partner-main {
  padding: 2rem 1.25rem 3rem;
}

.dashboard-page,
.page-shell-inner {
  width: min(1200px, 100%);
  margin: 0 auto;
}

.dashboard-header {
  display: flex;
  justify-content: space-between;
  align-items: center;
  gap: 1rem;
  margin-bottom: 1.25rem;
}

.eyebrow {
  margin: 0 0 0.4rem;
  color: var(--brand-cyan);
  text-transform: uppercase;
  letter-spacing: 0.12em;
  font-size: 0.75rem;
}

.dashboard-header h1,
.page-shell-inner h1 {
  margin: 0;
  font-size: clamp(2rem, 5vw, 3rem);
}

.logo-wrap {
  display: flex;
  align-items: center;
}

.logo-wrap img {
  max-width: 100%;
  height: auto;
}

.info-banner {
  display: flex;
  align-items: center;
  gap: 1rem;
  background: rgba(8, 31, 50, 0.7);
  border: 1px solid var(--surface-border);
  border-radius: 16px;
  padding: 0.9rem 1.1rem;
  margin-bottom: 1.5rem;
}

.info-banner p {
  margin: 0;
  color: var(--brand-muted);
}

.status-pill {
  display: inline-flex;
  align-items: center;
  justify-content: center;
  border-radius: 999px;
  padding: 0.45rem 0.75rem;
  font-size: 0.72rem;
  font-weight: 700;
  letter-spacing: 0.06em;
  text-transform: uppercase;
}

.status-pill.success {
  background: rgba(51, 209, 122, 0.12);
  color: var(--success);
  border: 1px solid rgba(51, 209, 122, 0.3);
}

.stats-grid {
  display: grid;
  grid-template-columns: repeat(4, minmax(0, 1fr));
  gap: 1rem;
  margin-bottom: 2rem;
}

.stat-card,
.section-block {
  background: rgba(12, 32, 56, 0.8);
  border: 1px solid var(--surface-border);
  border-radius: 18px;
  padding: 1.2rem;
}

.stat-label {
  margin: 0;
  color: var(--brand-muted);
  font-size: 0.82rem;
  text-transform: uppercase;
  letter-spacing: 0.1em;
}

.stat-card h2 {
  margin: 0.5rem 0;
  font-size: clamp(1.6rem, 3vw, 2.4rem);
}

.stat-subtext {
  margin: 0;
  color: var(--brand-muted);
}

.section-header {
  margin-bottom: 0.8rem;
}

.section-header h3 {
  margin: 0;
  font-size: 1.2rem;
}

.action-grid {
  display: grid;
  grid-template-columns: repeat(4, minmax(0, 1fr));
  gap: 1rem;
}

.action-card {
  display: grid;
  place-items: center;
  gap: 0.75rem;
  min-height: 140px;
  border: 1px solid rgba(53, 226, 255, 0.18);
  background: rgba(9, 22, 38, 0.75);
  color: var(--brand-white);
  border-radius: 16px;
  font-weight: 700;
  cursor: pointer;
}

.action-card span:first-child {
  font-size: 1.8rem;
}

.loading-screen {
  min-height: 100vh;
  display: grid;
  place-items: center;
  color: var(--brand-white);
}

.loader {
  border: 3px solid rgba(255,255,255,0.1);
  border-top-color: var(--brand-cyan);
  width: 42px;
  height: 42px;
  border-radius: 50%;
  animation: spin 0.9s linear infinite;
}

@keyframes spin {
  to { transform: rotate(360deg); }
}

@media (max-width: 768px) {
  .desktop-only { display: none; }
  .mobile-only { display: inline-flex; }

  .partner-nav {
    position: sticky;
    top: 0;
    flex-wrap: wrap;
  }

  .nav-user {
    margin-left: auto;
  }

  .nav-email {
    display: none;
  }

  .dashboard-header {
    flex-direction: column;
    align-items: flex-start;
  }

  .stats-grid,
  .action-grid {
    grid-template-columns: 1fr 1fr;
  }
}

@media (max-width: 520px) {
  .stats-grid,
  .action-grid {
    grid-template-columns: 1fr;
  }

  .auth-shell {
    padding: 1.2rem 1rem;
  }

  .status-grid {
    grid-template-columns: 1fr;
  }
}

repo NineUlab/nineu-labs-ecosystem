@@ -1,0 +1,59 @@
+app/partner/leads/page.tsx
+'use client';
+
+export default function LeadsPage() {
+  return (
+    <div className="page-shell-inner">
+      <h1>Lead Pool</h1>
+      <p>Open and assigned leads will appear here.</p>
+    </div>
+  );
+}
+
+app/partner/customers/page.tsx
+'use client';
+
+export default function CustomersPage() {
+  return (
+    <div className="page-shell-inner">
+      <h1>My Customers</h1>
+      <p>Customer accounts and activity will appear here.</p>
+    </div>
+  );
+}
+
+app/partner/sales/page.tsx
+'use client';
+
+export default function SalesPage() {
+  return (
+    <div className="page-shell-inner">
+      <h1>Sales</h1>
+      <p>Verified sales, status, and attribution will appear here.</p>
+    </div>
+  );
+}
+
+app/partner/commissions/page.tsx
+'use client';
+
+export default function CommissionsPage() {
+  return (
+    <div className="page-shell-inner">
+      <h1>Commissions</h1>
+      <p>Setup and recurring commission tracking will appear here.</p>
+    </div>
+  );
+}
+
+app/partner/wallet/page.tsx
+'use client';
+
+export default function WalletPage() {
+  return (
+    <div className="page-shell-inner">
+      <h1>Wallet</h1>
+      <p>Available balance, pending funds and withdrawals will appear here.</p>
+    </div>
+  );
+}

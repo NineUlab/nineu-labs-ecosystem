@@ -1,0 +1,40 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+import { ReactNode } from 'react';
+import { brandAssets } from '@/lib/brand-config';
+
+interface AuthLayoutProps {
+  children: ReactNode;
+  title?: string;
+  subtitle?: string;
+}
+
+export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
+  return (
+    <div className="auth-layout">
+      <div className="auth-shell">
+        <div className="auth-brand-block">
+          <div className="auth-logo-wrap">
+            <Image
+              src={brandAssets.logoSquare}
+              alt={brandAssets.logoSquareAlt}
+              width={120}
+              height={120}
+              priority
+            />
+          </div>
+          {title && <h1 className="auth-title">{title}</h1>}
+          {subtitle && <p className="auth-subtitle">{subtitle}</p>}
+        </div>
+
+        <div className="auth-card">{children}</div>
+
+        <div className="auth-meta">
+          <p>© NineU Labs Partners</p>
+        </div>
+      </div>
+    </div>
+  );
+}

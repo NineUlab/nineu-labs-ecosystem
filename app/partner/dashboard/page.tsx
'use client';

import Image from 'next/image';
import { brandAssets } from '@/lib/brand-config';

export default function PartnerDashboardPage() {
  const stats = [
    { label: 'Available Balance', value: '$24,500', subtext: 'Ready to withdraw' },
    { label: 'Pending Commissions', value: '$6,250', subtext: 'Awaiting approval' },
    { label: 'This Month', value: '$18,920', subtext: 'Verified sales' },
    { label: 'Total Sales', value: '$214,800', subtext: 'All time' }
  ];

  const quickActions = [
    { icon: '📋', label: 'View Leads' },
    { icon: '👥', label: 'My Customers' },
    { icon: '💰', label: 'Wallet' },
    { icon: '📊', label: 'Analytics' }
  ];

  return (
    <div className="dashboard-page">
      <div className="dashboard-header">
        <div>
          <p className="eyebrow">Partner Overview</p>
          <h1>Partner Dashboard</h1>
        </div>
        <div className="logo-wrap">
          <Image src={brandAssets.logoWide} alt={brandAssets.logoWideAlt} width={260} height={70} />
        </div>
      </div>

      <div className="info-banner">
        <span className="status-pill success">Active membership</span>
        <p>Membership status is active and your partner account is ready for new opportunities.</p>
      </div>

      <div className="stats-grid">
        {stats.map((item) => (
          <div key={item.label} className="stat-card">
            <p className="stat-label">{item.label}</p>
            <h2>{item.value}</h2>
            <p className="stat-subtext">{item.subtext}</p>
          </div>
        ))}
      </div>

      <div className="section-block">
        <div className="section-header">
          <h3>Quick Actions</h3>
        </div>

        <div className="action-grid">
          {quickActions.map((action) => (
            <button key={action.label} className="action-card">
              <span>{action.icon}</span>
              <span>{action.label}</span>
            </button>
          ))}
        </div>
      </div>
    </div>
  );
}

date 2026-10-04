@@ -1,0 +1,34 @@
+'use client';
+
+import { ReactNode, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useAuth } from '@/lib/auth-context';
+
+export default function PartnerLayout({ children }: { children: ReactNode }) {
+  const { user, isLoading, userRole } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isLoading && !user) {
+      router.push('/auth/login');
+    }
+
+    if (!isLoading && user && userRole && userRole !== 'partner') {
+      router.push('/auth/login');
+    }
+  }, [isLoading, user, userRole, router]);
+
+  if (isLoading) {
+    return (
+      <div className="loading-screen">
+        <div className="loader">Loading...</div>
+      </div>
+    );
+  }
+
+  if (!user) {
+    return null;
+  }
+
+  return <>{children}</>;
+}
